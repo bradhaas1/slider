@@ -35,40 +35,38 @@ body{
 
 
 .inner div.thumb_1 figure{
-	background: url('img/CIMG0140.JPG');
+	background: url('../img/CIMG0140.JPG');
 }
 
 .inner div.thumb_2 figure{
-	background: url('img/CIMG0151.JPG');
+	background: url('../img/CIMG0151.JPG');
 }
 
 .inner div.thumb_3 figure{
-	background: url('img/CIMG0152.JPG');
+	background: url('../img/CIMG0152.JPG');
 }
 
 .inner div.thumb_4 figure{
-	background: url('img/CIMG0157.JPG');
+	background: url('../img/IMG_0779.JPG');
 }
 .inner div.thumb_5 figure{
-	background: url('img/IMG_0779.JPG');
+	background: url('../img/IMG_0784.JPG');
 }
 .inner div.thumb_6 figure{
-	background: url('img/IMG_0784.JPG');
+	background: url('../img/IMG_0785.JPG');
 }
 .inner div.thumb_7 figure{
-	background: url('img/IMG_0785.JPG');
+	background: url('../img/IMG_0794.JPG');
 }
 .inner div.thumb_8 figure{
-	background: url('img/IMG_0794.JPG');
-}
-.inner div.thumb_9 figure{
-	background: url('img/silver-creek-biking.jpg');
+	background: url('../img/silver-creek-biking.jpg');
 }
 
 .inner div figure{
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	background-size: contain;
 	background-position: center top;
 	display: block;
 	height: 100%;
+  background-repeat: no-repeat;
 }
