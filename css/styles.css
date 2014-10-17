@@ -6,7 +6,7 @@ body{
  min-height:100%;
  }
 
-.outer{
+.outerslider{
 	position: absolute;
 	overflow:hidden;
 	width:100%;
@@ -14,7 +14,7 @@ body{
 	height: 10rem;
 }
 
-.inner{
+.innerslider{
 	-webkit-transform: translateX(0px);
 	-webkit-transition: none;
 	transition: none;
@@ -23,7 +23,7 @@ body{
 	height: 100%;
 }
 
-.inner div {
+.innerslider div {
 	overflow:visible;
 	display:block;
 	width: 20%;
@@ -34,39 +34,38 @@ body{
 }
 
 
-.inner div.thumb_1 figure{
+.innerslider div.thumb_1 figure{
 	background: url('../img/CIMG0140.JPG');
 }
 
-.inner div.thumb_2 figure{
+.innerslider div.thumb_2 figure{
 	background: url('../img/CIMG0151.JPG');
 }
 
-.inner div.thumb_3 figure{
+.innerslider div.thumb_3 figure{
 	background: url('../img/CIMG0152.JPG');
 }
 
-.inner div.thumb_4 figure{
+.innerslider div.thumb_4 figure{
 	background: url('../img/IMG_0779.JPG');
 }
-.inner div.thumb_5 figure{
+.innerslider div.thumb_5 figure{
 	background: url('../img/IMG_0784.JPG');
 }
-.inner div.thumb_6 figure{
+.innerslider div.thumb_6 figure{
 	background: url('../img/IMG_0785.JPG');
 }
-.inner div.thumb_7 figure{
+.innerslider div.thumb_7 figure{
 	background: url('../img/IMG_0794.JPG');
 }
-.inner div.thumb_8 figure{
+.innerslider div.thumb_8 figure{
 	background: url('../img/silver-creek-biking.jpg');
 }
 
-.inner div figure{
-	-webkit-background-size: contain;
-	background-size: contain;
+.innerslider div figure{
+	-webkit-background-size: cover;
+	background-size: cover;
 	background-position: center top;
 	display: block;
 	height: 100%;
-  background-repeat: no-repeat;
 }

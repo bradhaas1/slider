@@ -5,7 +5,7 @@
 
 
   FireJS.sandSlide = new FireJS.SandboxSlider({
-    el: $q('.innerslider'),
+    el: $q('.outerslider'),
     test: function () {
       console.log('test');
     }
