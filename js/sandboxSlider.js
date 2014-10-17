@@ -11,35 +11,41 @@
   FireJS.SandboxSlider.prototype = new FireJS.Component({
     init: function(){
       this.on();
-      this.inner = $q('.innerslider');
     },
     constructor: FireJS.SandboxSlider,
     on: function () {
       this.when('touchstart touchmove touchend');
     },
     handleEvent: function (e) {
-      console.log(e.type);
       var delegate = {
         touchstart: this.tap,
         touchmove: this.move,
         touchend: this.release
       },
       func = delegate[e.type];
-      if (func) func.call(this.e);
+      if (func) func.call(this, e);
     },
 
-    tap: function(e) {
-      console.log('touchstart');
-      alert('touchstart');      
+    tap: function(e) {      
+      this.thumbs.forEach(function (thumb) {
+        thumb.style.opacity = '0.5';
+      });
+      e.target.style.opacity = '1';
+
+      e.preventDefault();
+      log("touchstart.");
+      var el = document.getElementsByTagName("canvas")[0];
+      var ctx = el.getContext("2d");
+      var touches = e.changedTouches;
+      
     },
     move: function(e){
-      console.log('touchmove');
-      alert('touchmove');
-      this.inner.style.
+
+      this.inner.style.webkitTransform = 'translateX(-300px)';
+      
     },
     release: function (e) {
-      console.log('touchend');
-      alert('touchend');
+
     }
 
   });

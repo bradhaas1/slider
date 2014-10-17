@@ -6,9 +6,12 @@
 
   FireJS.sandSlide = new FireJS.SandboxSlider({
     el: $q('.outerslider'),
+    inner: $q('.innerslider'),
+    thumbs: $$('.innerslider div[class*="thumb"] figure'),
     test: function () {
-      console.log('test');
-    }
+      console.log(FireJS.sandSlide.thumbs);
+    },
+
   });
 
   //console.log(this.siblings(el));
